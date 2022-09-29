@@ -5,8 +5,8 @@ import CreatePost from "./Components/CreatePost/CreatePost.jsx";
 function App() {
 
   const [posts, setPosts] = useState([
-    {name: 'David Lagrange', post:'I recently went into the worrs to search for the oldest tree'},
-    {name: 'JJ Vega', post: 'Its April Fools Dya! Give this a dislike if you really like it.:)'},
+    {name: 'David Lagrange', postTime:'10:23:50 29/09/2022', post:'I recently went into the worrs to search for the oldest tree'},
+    {name: 'JJ Vega', postTime:'10:23:50 28/09/2022', post: 'Its April Fools Dya! Give this a dislike if you really like it.:)'},
   ])
 
   function addNewPost(post) {
