@@ -9,8 +9,8 @@ import './App.css';
 function App() {
 
   const [posts, setPosts] = useState([
-    {id: 1, name: 'David Lagrange', postTime:'10:23:50 29/09/2022', post:'I recently went into the worrs to search for the oldest tree'},
-    {id: 2, name: 'JJ Vega', postTime:'10:23:50 28/09/2022', post: 'Its April Fools Dya! Give this a dislike if you really like it.:)'},
+    {id: 1, name: 'Smith Green', postTime:'10:23:50 29/09/2022', post:'I recently went into the worrs to search for the oldest tree'},
+    {id: 2, name: 'Tom Blue', postTime:'10:23:50 28/09/2022', post: 'Its April Fools Dya! Give this a dislike if you really like it.:)'},
   ])
  
   function addNewPost(post) {
