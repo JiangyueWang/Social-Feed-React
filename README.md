@@ -2,9 +2,11 @@
 
 This simple react project allows
 
-- user to view all the posts have submit via simple form
-- user to add a post with their name and post
-- like or dislike other's post
+- user to create a post by enter the name and post content on the form  
+- display all the post that has been created by the users
+- user can like other people's post
+- user can show/hide comment(s) of the post
+- user can add comment to the post
 
 ## Available Scripts
 
