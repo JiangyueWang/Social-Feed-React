@@ -31,7 +31,7 @@ const CreatePost = (props) => {
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" class="form-control" placeholder="Enter name" value={name} onChange={(event) => setName(event.target.value)}></input>
-                <small class="form-text text-muted">This name will appear next to your post.</small>
+
             </div>
             <div class="form-group">
                 <label for="exampleFormControlTextarea1">Post</label>
