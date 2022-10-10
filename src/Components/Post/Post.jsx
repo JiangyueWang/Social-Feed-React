@@ -9,22 +9,46 @@ const Posts = (prop) => {
         const temComments = [newComment, ...comment];
         setComment(temComments);
     }
-    return (       
-    <div>
-        <h2>{prop.post.name}</h2>
-        <p>{prop.post.postTime}</p>
-        <p>{prop.post.post}</p>
-        <CustomButton text='like' />
-        <button type="button" onClick={() => setShow(!show)}> 
-        {
-            show === true ? 'hide comment(s)' : 'show comment(s)'
-        }
-        </button> 
-        <div>
+    return (   
+    <div class="card">
+        <div class="card-header">
+            <h2>{prop.post.name}</h2>
+        </div>
+        <div class="card-body">
+
+            <p>{prop.post.post}</p>
+            <div>
+
+            </div>
+            
+            <div className="flex">
+                <div className='flex-item1'>
+                    <CustomButton text='like' />
+                </div>
+                
+                
+                <button type="button" onClick={() => setShow(!show)} class="btn btn-outline-info"> 
+                {
+                    show === true ? 'hide comment(s)' : 'show comment(s)'
+                }
+                </button> 
+            </div>
+
+
+
+
             {show && <DisPlayComment comments={comment}/>}
             {show &&  <AddNewComment addNewComment={addNewComment}/>}
-        </div>  
-    </div>
+
+        </div>
+</div>
+        
+    // <div>
+    //     
+    //     <p>{prop.post.postTime}</p>
+    //     
+    //     
+    // </div>
 
     );
 }

@@ -20,7 +20,7 @@ const CustomButton = (props) => {
     }
     return (
         <div>
-            <button onClick={handleClick}>{text}</button>
+            <button onClick={handleClick} className="btn btn-outline-success" >{text}</button>
         </div>
     );
 }

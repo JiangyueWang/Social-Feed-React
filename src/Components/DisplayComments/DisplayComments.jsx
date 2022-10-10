@@ -6,8 +6,8 @@ const DisplayComments = (props) => {
         props.comments.map((comment) => {
         return (
             <div>
-                <p>Name: {comment.name}</p>
-                <p>Comment: {comment.comment}</p>
+                <p>{comment.name}</p>
+                <p>{comment.comment}</p>
             </div>
             
         )

@@ -1,7 +1,10 @@
 import React from 'react';
 const NavBar = (prop) => {
     return ( 
-        <h1>SocialFeed</h1>
+        <div className='navbar navbar-light bg-light shadow-sm p-3 mb-5 bg-body rounded'>
+            <h1>Social<span className='title-word'>Feed</span></h1>
+        </div>
+        
      );
 }
  

@@ -5,4 +5,41 @@
 body {
     margin: 0;
     padding: 0;
+    font-family:'Inter', sans-serif;
+}
+
+.title-word {
+    color: grey
+}
+.create-post-form{
+    width: 50em;
+    margin: 0 auto;
+    padding-left: 2em;
+}
+.create-post-button {
+    margin-top: 1em;
+}
+.form-group {
+    width: 100%;
+    margin: auto 0;
+}
+
+.card {
+    width: 50em;
+    margin:  0 auto;
+    margin-bottom: 1rem;
+}
+
+.flex {
+    display: flex;
+}
+.flex-item1{
+    margin-right: 2em;
+}
+
+.comment-form {
+    width: 100%;
+}
+.comment-form-group {
+    margin-bottom: 1em;
 }

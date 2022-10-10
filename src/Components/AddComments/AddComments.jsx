@@ -13,13 +13,18 @@ const AddComments = (props) => {
     }
 
     return (
-       <form onSubmit={handleCommentSubmit}>
+       <form onSubmit={handleCommentSubmit} className='create-post-form shadow-sm p-3 mb-5 bg-white rounded comment-form'>
         <p>Add new comment below</p>
-        <label>name</label>
-        <input type="text" value={name} onChange={(event)=> setName(event.target.value)}></input>
-        <label>comment</label>
-        <input type='text' value={comment} onChange={(event)=>setComment(event.target.value)}></input>
-        <button>Add</button>
+        <div class="form-group comment-form-group">
+           <label>Name</label>
+            <input class="form-control"  type="text" value={name} onChange={(event)=> setName(event.target.value)}></input> 
+        </div>
+        <div className="form-group comment-form-group">
+            <label>Comment</label>
+            <input class="form-control"  type='text' value={comment} onChange={(event)=>setComment(event.target.value)}></input>
+        </div>
+        
+        <button class="btn btn-primary">Add</button>
        </form>
     );
 }

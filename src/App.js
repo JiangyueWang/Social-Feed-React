@@ -2,7 +2,7 @@ import { useState } from "react";
 import NavBar from "./Components/NavBar/NavBar.jsx";
 import DisplayPost from "./Components/DisplayPosts/DisplayPosts.jsx";
 import CreatePost from "./Components/CreatePost/CreatePost.jsx";
-
+import './App.css';
 
 
 // import CustomButton from "../src/Components/CutomButton/CustomButton";
@@ -20,7 +20,7 @@ function App() {
 
   return (
     <div>
-      <NavBar className="navbar"/>
+      <NavBar />
       <CreatePost addNewPost={addNewPost}/>
       <DisplayPost post={posts}></DisplayPost>
     </div>
