@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 const CreatePost = (props) => {
     const [name, setName] = useState('');
     const [post, setPost] = useState('');
+    let [id, setId] = useState(3);
+
     function getPostTime() {
         // const timeSubmit = Date.now();
         // const date = new Date(timeSubmit);
@@ -11,12 +13,15 @@ const CreatePost = (props) => {
     }
     function handleSubmit(event) {
         event.preventDefault();
-        const postTime = getPostTime()
+        const postTime = getPostTime();
+        const newId = id + 1; 
+        setId(newId);
         // console.log(JSON.stringify(postTime))
         let newPost = {
+            id: id,
             name: name,
             postTime: postTime,
-            post: post
+            post: post,
         }
         props.addNewPost(newPost)
 
@@ -30,6 +35,7 @@ const CreatePost = (props) => {
             <input type="text" value={post} onChange={(event) => setPost(event.target.value)}></input>
 
             <button type='submit'>Create</button>
+
         </form>
     );
 }

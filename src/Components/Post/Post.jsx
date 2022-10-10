@@ -6,7 +6,7 @@ const Posts = (prop) => {
     const [comment, setComment] = useState([{}]);
     const [show, setShow] = useState(false);
     function addNewComment(newComment) {
-        let temComments = [newComment, ...comment];
+        const temComments = [newComment, ...comment];
         setComment(temComments);
     }
     return (       
